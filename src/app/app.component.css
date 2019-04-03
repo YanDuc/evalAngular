@@ -1,0 +1,23 @@
+.menu{
+    display:flex;
+    justify-content: space-around;
+}
+ul, li{
+    list-style-type: none
+}
+a{ 
+    color:grey; 
+    font-family:verdana; 
+    font-size:12px; 
+    padding:5px 20px; 
+    text-decoration:none; 
+    background-repeat:repaet-x; 
+    background-position:top; 
+    border:solid 1px grey; 
+    border-radius:5px; 
+ } 
+a:hover{ 
+    background-position:bottom; 
+    border:solid 1px black; 
+    color:black; 
+ } 

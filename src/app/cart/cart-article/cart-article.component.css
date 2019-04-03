@@ -1,0 +1,8 @@
+.produit{
+    display:flex;
+    border:1px solid black;
+}
+img{
+    width:150px;
+    height:150px;
+}

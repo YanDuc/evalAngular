@@ -1,0 +1,12 @@
+<h2>Form edition product</h2>
+
+<form [formGroup]="productForm" (ngSubmit)="saveProduct($event)">
+  <input type="text" placeholder="photo" formControlName="photo">
+  <input type="text" placeholder="titre" formControlName="titre">
+  <input type="text" placeholder="description" formControlName="description">
+  <input type="number" placeholder="prix" formControlName="prix">
+  <button type="submit">Save</button>
+</form>
+<div *ngIf="errorMessage.length > 0">
+  <div *ngFor="let error of errorMessage" style="background-color: brown; font-size: 20px;">{{error}}</div>
+</div>

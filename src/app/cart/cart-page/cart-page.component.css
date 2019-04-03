@@ -1,0 +1,17 @@
+.monPanier{
+    display:flex;
+}
+.container-articles{
+    width:80%;
+    margin:20px;
+}
+.total{
+    text-align:center;
+    width: 20%;
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: pink;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}

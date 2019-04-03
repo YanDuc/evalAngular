@@ -1,0 +1,10 @@
+<div class="container-product">
+    <img [src]="product.photo">
+    <div class="container-description">
+      <div>{{product.titre}}</div>
+      <div>{{product.description}}</div>
+      <div>PRIX : {{product.prix}} €</div>
+      <div>QTE : {{product.quantite}}</div>
+      <button (click)="addToCart(product)">add to cart</button>
+    </div>
+  </div>

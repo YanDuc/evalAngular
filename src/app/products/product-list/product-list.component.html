@@ -1,0 +1,11 @@
+<div class="container-productList">
+    <app-product-card *ngFor="let currentProduct of productList" 
+        (onSaveProduct)="updateProduct($event)" 
+        [product]="currentProduct"
+    >
+    </app-product-card>
+</div>
+
+<button routerLink="/product/create">
+    Create An ARTICLE
+</button>

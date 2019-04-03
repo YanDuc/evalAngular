@@ -1,0 +1,14 @@
+<div class="produit">
+  <div>
+      <img [src]="article.photo">
+  </div>
+  <div>
+    <h2>{{article.titre}}</h2>
+    <div>{{article.description}}</div>
+    <div>PRIX : {{article.prix}} €</div>
+    <div>QTE : {{article.quantite}}</div>
+  </div>
+  <div>
+    <button (click)="deleteToCart(article.id)">DELETE</button>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+.container-product{
+    border:1px solid black;
+    display: flex;
+    justify-content: space-around;
+}
+:host {
+    flex: 0 1 33%;
+}
+img{
+    width:150px;
+    height:150px;
+}
+.addToCartButton{
+    background-color: pink;
+}
+.addToCartButton:hover{
+    background-color: greenyellow;
+}
+.addToCart2Button{
+    background-color: greenyellow;
+}
+.addToCart2Button:hover{
+    background-color: pink;
+}
+.addToCart2Button, .addToCartButton{
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 15px;
+}
+h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}

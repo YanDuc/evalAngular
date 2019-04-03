@@ -1,0 +1,13 @@
+<h1>Mon panier</h1>
+<span class="monPanier" *ngIf="!empty">
+  <div class="container-articles">
+      <app-cart-article *ngFor="let article of articles" [article]="article"></app-cart-article>
+  </div>
+  <div class="total">
+      <div>TOTAL : {{total}} €</div>
+      <button>PAY NOW</button>
+  </div>
+</span>
+<span *ngIf="empty">
+  <div>y'a kedale dans le panier</div>
+</span>

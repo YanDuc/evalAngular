@@ -1,0 +1,27 @@
+<div class="container-product">
+  <img [src]="product.photo">
+  <div class="container-description">
+    <h2>{{product.titre}}</h2>
+    <div>{{product.description}}</div>
+    <div>{{product.prix}} €</div>
+    <select #select>
+      <option value="1" selected>1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+    </select>
+    <div>
+        <button class="addToCartButton" (click)="addToCart(product, select.value)">add to cart</button>
+        <button class="addToCart2Button" (click)="voirProduit(product)">view detail</button>
+    </div>
+    <div>
+        <button (click)="updateMe(product.id)">update</button>
+        <button (click)="delete(product.id)">delete</button>
+    </div>
+
+  </div>
+</div>
